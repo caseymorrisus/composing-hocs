@@ -1,0 +1,14 @@
+.comments {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.comment {
+  margin-bottom: 1em;
+}
+
+.comment .label {
+  font-weight: 700;
+  margin-right: 5px;
+}

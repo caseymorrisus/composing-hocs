@@ -1,0 +1,12 @@
+.header {
+  background: #efefef;
+  padding: 10px 15px;
+  margin-bottom: 1rem;
+}
+
+.header .url {
+  background: #333;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
+}

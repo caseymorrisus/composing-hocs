@@ -1,0 +1,8 @@
+.user {
+  margin-bottom: 1rem;
+}
+
+.user .label {
+  font-weight: 700;
+  margin-right: 5px;
+}
