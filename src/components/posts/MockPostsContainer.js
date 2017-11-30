@@ -1,18 +1,15 @@
 import React          from 'react'
 import Post           from './Post'
 import PostDefault    from './PostDefault'
-import hasLogger      from '../../hoc/hasLogger'
-import hasMockData    from '../../hoc/hasMockData'
-import hasLoader      from '../../hoc/hasLoader'
-import hasError       from '../../hoc/hasError'
-import hasDefault     from '../../hoc/hasDefault'
-import hasTimeouts    from '../../hoc/hasTimeouts'
-import isList         from '../../hoc/isList'
-import { compose }    from 'redux'
-
-import Button         from '../Button'
-
-const PostsList = isList('posts')(Post)
+import hasLogger from '../../hoc/hasLogger'
+import hasMockData from '../../hoc/hasMockData'
+import hasLoader from '../../hoc/hasLoader'
+import hasError from '../../hoc/hasError'
+import hasDefault from '../../hoc/hasDefault'
+import hasTimeouts from '../../hoc/hasTimeouts'
+import isList from '../../hoc/isList'
+import Button from '../Button'
+import { compose } from 'redux'
 
 const mockData = [
   {
@@ -33,7 +30,8 @@ const EnhancedPosts = compose(
   hasLoader,
   hasError(),
   hasDefault(PostDefault),
-)(PostsList)
+  isList('posts'),
+)(Post)
 
 class MockPostsContainer extends React.Component {
   constructor(props) {
