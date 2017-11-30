@@ -56,6 +56,7 @@ class Home extends React.Component {
         />
         <hr />
         <MockPostsContainer />
+        <hr />
       </div>
     )
   }
